@@ -56,6 +56,7 @@ nav ul li a:hover{
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  max-width: 45%;
 }
 
 .first div h1{
@@ -89,4 +90,88 @@ nav ul li a:hover{
   font-weight: bold;
   align-self: flex-start;
   margin-top: 62px;
+}
+
+.second{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1249px;
+  margin: 0 auto;
+  padding: 100px;
+  border-bottom: 1px solid #ececec;
+}
+
+.second >div{
+  max-width: 45%;
+}
+
+#left h2{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 42px;
+  line-height: 55px;
+  color: #585858;
+  margin-top: 0px;
+}
+
+#left p{
+  line-height: 25px;
+}
+
+#left button{
+  border-radius: 5px;
+  border: 2px solid #ff3f40;
+  color: #ff3f40;
+  background-color: #ffffff;
+  padding: 16px 0;
+  text-align: center;
+  width: 227px;
+  align-self: flex-end;
+  margin-top: 50px;
+}
+
+#right{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#right div{
+  max-width: 48%;
+  margin-bottom: 50px;
+}
+
+#right h3{
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+}
+
+#right p{
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.third{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1249px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+#featureProducts h2{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 42px;
+  line-height: 55px;
+  color: #585858;
+  margin-top: 0px;
+}
+
+.third ul li{
+  display: inline-block;
 }
