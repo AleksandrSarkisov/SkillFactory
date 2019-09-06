@@ -4,11 +4,14 @@ body{
   margin: 0;
 }
 
-header{
+#header{
   background-color: #e0e0e0;
+}
+
+header{
   margin: auto;
   max-width: 1249px;
-  padding: 0px 100px;
+  margin: 0px auto;
 }
 
 nav{
@@ -42,24 +45,25 @@ nav ul li a:hover{
   background-color: #ff3f40;
 }
 
-.first{
+.part{
   display: flex;
+  padding: 100px 0;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1249px;
+}
+
+#first{
   align-items: flex-start;
   justify-content: center;
-  max-width: 1249px;
-  margin: auto;
   background-color: #e0e0e0;
-  padding: 100px;
 }
 
-.first div{
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  max-width: 45%;
+#first  div div{
+  margin-bottom: 20px;
 }
 
-.first div h1{
+#first div h1{
   margin: 0;
   font-size: 60px;
   font-weight: bold;
@@ -69,18 +73,18 @@ nav ul li a:hover{
   margin-bottom: 37px;
 }
 
-.first div h1 .style-text{
+#first div h1 .style-text{
   letter-spacing: 6px;
   word-break: break-word;
 }
 
-.first p{
+#first p{
   color: #a5a3a3;
   line-height: 25px;
   max-width: 500px;
 }
 
-.first div button{
+#first div button{
   border: 0px;
   border-radius: 10px;
   background-color: #ff2d2d;
@@ -92,22 +96,19 @@ nav ul li a:hover{
   margin-top: 62px;
 }
 
-.second{
-  display: flex;
+#second{
   align-items: flex-start;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1249px;
-  margin: 0 auto;
-  padding: 100px;
+  justify-content: center;
   border-bottom: 1px solid #ececec;
 }
 
-.second >div{
-  max-width: 45%;
+#left{
+  max-width: 502px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
 
-#left h2{
+h2{
   font-weight: bold;
   text-transform: uppercase;
   font-size: 42px;
@@ -116,7 +117,7 @@ nav ul li a:hover{
   margin-top: 0px;
 }
 
-#left p{
+p{
   line-height: 25px;
 }
 
@@ -135,10 +136,11 @@ nav ul li a:hover{
 #right{
   display: flex;
   flex-wrap: wrap;
+  max-width: 609px;
 }
 
 #right div{
-  max-width: 48%;
+  max-width: 288px;;
   margin-bottom: 50px;
 }
 
@@ -153,25 +155,162 @@ nav ul li a:hover{
   line-height: 28px;
 }
 
-.third{
-  display: flex;
-  align-items: flex-start;
+#third{
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1249px;
-  margin: 0 auto;
-  padding: 100px;
 }
 
 #featureProducts h2{
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 42px;
-  line-height: 55px;
-  color: #585858;
-  margin-top: 0px;
+  text-align: center;
 }
 
-.third ul li{
+#featureProducts p{
+  opacity: 0.7;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.redLine{
+  width: 122px;
+  height: 3px;
+  background-color: #ff2d2d;
+  border: none;
+}
+
+#third ul{
+  display: flex;
+  margin-bottom: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#third ul li{
+  list-style: none;
+  text-align: center;
+}
+
+#third ul li a{
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #000;
+  margin-right: 55px;
+  opacity: 0.7;
+}
+
+#third ul li a:hover{
+  color: #ff2d2d;
+}
+
+#third #example{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#example img{
+  flex: 1 1 24%;
+  min-width: 250px;
+  max-width: 299px;
+  height: 291px;
+  margin-bottom: 18px;
+}
+
+#fourth{
+  flex-direction: column;
+}
+
+#headerTeam{
+  text-align: left;
+  margin-bottom: 67px;
+}
+
+#headerTeam h2{
+  margin-bottom: 23px;
+}
+
+#headerTeam p{
+  max-width: 460px;
+  margin-bottom: 30px;
+}
+
+#headerTeam hr{
+  margin-left: 0;
+}
+
+#team{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#team >img{
+  width: 321px;
+  height: 458px;
+  background-color: #eb6d4a8f;
+  margin-right: 65px;
+}
+
+#members{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+#members h3{
+  font-size: 30px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+#members p{
+  margin-bottom: 34px;
+  max-width: 642px;
+}
+
+#members ul{
+  padding: 0;
+}
+
+#members ul li{
   display: inline-block;
+  list-style: none;
+}
+
+#members ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  margin-right: 30px;
+  font-style: italic;
+}
+
+#members ul li a:hover{
+  text-decoration: underline;
+}
+
+#avatar{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#avatar img{
+  width: 197px;
+  height: 214px;
+  background-color: #d4dce680;
+  margin-right: 18px;
+  margin-top: 18px;
+}
+
+
+@media screen and (max-width: 700px){
+
+  #first img{
+    width: 100%;
+  }
+
+  #third ul li{
+    width: 100%;
+  }
 }
