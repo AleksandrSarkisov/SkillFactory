@@ -1,7 +1,46 @@
-body{
-  font-family: sans-serif;
+@font-face{
+  src: url('../fonts/OpenSans-Regular.ttf');
+  font-family: 'OpenSans Regular';
+}
 
+@font-face{
+  src: url('../fonts/OpenSans-Italic.ttf');
+  font-family: 'OpenSans Italic';
+}
+
+@font-face{
+  src: url('../fonts/OpenSans-Bold.ttf');
+  font-family: 'OpenSans Bold';
+}
+
+@font-face{
+  src: url('../fonts/OpenSans-SemiBold.ttf');
+  font-family: 'OpenSans SemiBold';
+}
+
+@font-face{
+  src: url('../fonts/OpenSans-ExtraBold.ttf');
+  font-family: 'OpenSans ExtraBold';
+}
+
+
+body{
+  font-family: 'OpenSans Regular';
   margin: 0;
+}
+
+h2{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 42px;
+  line-height: 55px;
+  color: #585858;
+  margin-top: 0px;
+  font-family: 'OpenSans Bold';
+}
+
+p{
+  line-height: 25px;
 }
 
 #header{
@@ -67,10 +106,10 @@ nav ul li a:hover{
   margin: 0;
   font-size: 60px;
   font-weight: bold;
-  font-family: sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 37px;
+  font-family: 'OpenSans ExtraBold';
 }
 
 #first div h1 .style-text{
@@ -106,19 +145,6 @@ nav ul li a:hover{
   max-width: 502px;
   margin-right: 50px;
   margin-bottom: 50px;
-}
-
-h2{
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 42px;
-  line-height: 55px;
-  color: #585858;
-  margin-top: 0px;
-}
-
-p{
-  line-height: 25px;
 }
 
 #left button{
@@ -222,21 +248,21 @@ p{
   flex-direction: column;
 }
 
-#headerTeam{
+.h2Title{
   text-align: left;
   margin-bottom: 67px;
 }
 
-#headerTeam h2{
+.h2Title h2{
   margin-bottom: 23px;
 }
 
-#headerTeam p{
+.h2Title p{
   max-width: 460px;
   margin-bottom: 30px;
 }
 
-#headerTeam hr{
+.h2Title hr{
   margin-left: 0;
 }
 
@@ -262,6 +288,7 @@ p{
   font-size: 30px;
   text-transform: uppercase;
   opacity: 0.8;
+  font-family: 'OpenSans SemiBold';
 }
 
 #members p{
@@ -303,6 +330,137 @@ p{
   margin-top: 18px;
 }
 
+#fifth{
+  background-color: #2c2c2c;
+  width: 100%;
+}
+
+#fifth >div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding-top: 124px;
+  padding-bottom: 140px;
+}
+
+#fifth h2{
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: none;
+}
+
+#fifth p{
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#fifth #form{
+  display: flex;
+  justify-content: center;
+}
+
+#fifth #form input{
+  border: none;
+  border-radius: 5px;
+  width: 521px;
+  min-height: 79px;
+  margin-right: 22px;
+  padding-left: 35px;
+}
+
+#fifth  #form button{
+  background-color: #ff2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  width: 214px;
+  min-height: 79px;
+  font-size: 18px;
+  font-family: 'OpenSans Bold'
+}
+
+#sixth{
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+#feedbackForm{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#feedbackForm div{
+  background-color: #f3f3f3;
+  color: grey;
+  font-size: 16px;
+  font-family: 'OpenSans Regular';
+  border-radius: 5px;
+  padding-left: 54px;
+  margin-bottom: 45px;
+  display: flex;
+  align-items: center;
+}
+
+#feedbackForm #name{
+  height: 69px;
+  max-width: 339px;
+  width: 339px;
+  margin-right: 53px;
+}
+
+#feedbackForm #mail{
+  height: 69px;
+  max-width: 339px;
+  width: 339px;
+}
+
+#feedbackForm #text{
+  align-items: flex-start;
+  padding-top: 35px;
+  width: 731px;
+  max-width: 731px;
+  height: 249px;
+}
+
+#feedbackForm button{
+    background-color: #ff2d2d;
+    border-radius: 5px;
+    border: none;
+    font-family: 'OpenSans Bold';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    max-width: 731px;
+    width: 731px;
+    height: 72px;
+    vertical-align: middle;
+}
+
+#contactInfo{
+  position: relative;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  padding: 125px 78px;
+  max-width: 
+}
+
+#contactInfo h2{
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  color: #e0e0e0;
+  font-size: 18px;
+}
+
+address p{
+  margin-bottom: 17px;
+}
 
 @media screen and (max-width: 700px){
 
