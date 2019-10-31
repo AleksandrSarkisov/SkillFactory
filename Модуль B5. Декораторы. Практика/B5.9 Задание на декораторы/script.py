@@ -1,21 +1,26 @@
 import time
 
-def time_this(num_runs=10):
-    time_lists = []
-    def func_wrap(fun):
-        def f():
-            for _ in range(num_runs):
-                start = time.time()
-                fun()
-                time_lists.append(time.time()-start)
-            return sum(time_lists)/len(time_lists)
-        return f
-    return func_wrap
+class Timer():
+    def __init__(self, num_runs, fun):
+        self.num_runs = num_runs
+        self.fun = fun
+
+    def __enter__(self):
+        self.start = time.time()
+        return self
+
+    def __exit__(self, *args, **kwargs):
+        runtime = time.time()-self.start
+        avg = runtime/self.num_runs
+        print("Averge runtime of function {} for {} times is {} sec".format(self.fun.__name__, self.num_runs, avg))
 
 
-@time_this(num_runs=10)
+
 def f():
     for j in range(1000000):
         pass
 
-print(f())
+if __name__ == "__main__":
+    with Timer(10, f):
+        for _ in range(1000000):
+            pass
